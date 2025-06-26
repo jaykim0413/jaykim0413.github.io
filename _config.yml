@@ -22,10 +22,10 @@ repository               : "jaykim0413/jaykim0413.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Jay Won Kim (Jay Kim)"
   pronouns         : "he/him"
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Typing..."
   location         : "IL, USA"
   employer         : "University of Illinois at Urbana-Champaign"
   uri              : # URL
