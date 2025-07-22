@@ -7,7 +7,7 @@ excerpt: 'In this study, we aimed to enhance the accuracy of dental treatments, 
 date: 2025-05-12
 venue: 'BioImage Computing Workshop, European Conference on Computer Vision 2024 (BIC ECCV 2024)'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Kim, J.W., Bae, S. (2025). Generalized Segmentation for Maxillary Sinus and Mandibular Canal in Panoramic X-Rays. In: Del Bue, A., Canton, C., Pont-Tuset, J., Tommasi, T. (eds) Computer Vision – ECCV 2024 Workshops. ECCV 2024. Lecture Notes in Computer Science, vol 15638. Springer, Cham. https://doi.org/10.1007/978-3-031-91721-9_17'
+citation: '*Kim, J.W., Bae, S. (2025). Generalized Segmentation for Maxillary Sinus and Mandibular Canal in Panoramic X-Rays. In: Del Bue, A., Canton, C., Pont-Tuset, J., Tommasi, T. (eds) Computer Vision – ECCV 2024 Workshops. ECCV 2024. Lecture Notes in Computer Science, vol 15638. Springer, Cham. https://doi.org/10.1007/978-3-031-91721-9_17*'
 ---
 
 Using [MathJax](https://www.mathjax.org/) in the description is supported - $$E=mc^2$$ - however, the use must be mindful that the default delimiters are `$$...$$` and `\\[...\\]` which differs from the `$...$` that is typically expected.
