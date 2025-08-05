@@ -8,4 +8,4 @@ redirect_from:
 ---
 
 Under Construction 🚧\
-** I'm currently working on the content for my About page ^^ **
+*I'm currently working on the content for my About page ^^*
