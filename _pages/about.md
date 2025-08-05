@@ -7,5 +7,5 @@ redirect_from:
   - /about.html
 ---
 
-Under Construction 🚧
+Under Construction 🚧\
 ** I'm currently working on the content for my About page ^^ **
