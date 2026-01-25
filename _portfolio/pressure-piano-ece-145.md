@@ -1,6 +1,6 @@
 ---
 title: "Pressure Piano (ECE 145)"
-excerpt: "An Electronic Pressure Piano with Pressure-Based Volume Control and Octave Control<br/><img src='images/pressure-piano-ece-145-cover.png'>"
+excerpt: "An Electronic Pressure Piano with Pressure-Based Volume Control and Octave Control<br/><img src='/images/pressure-piano-ece-145-cover.png'>"
 collection: portfolio
 ---
 
