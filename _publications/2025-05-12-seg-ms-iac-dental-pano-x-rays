@@ -10,4 +10,38 @@ paperurl: 'https://rdcu.be/exo7Q'
 citation: '*Kim, J.W., Bae, S. (2025). Generalized Segmentation for Maxillary Sinus and Mandibular Canal in Panoramic X-Rays. In: Del Bue, A., Canton, C., Pont-Tuset, J., Tommasi, T. (eds) Computer Vision – ECCV 2024 Workshops. ECCV 2024. Lecture Notes in Computer Science, vol 15638. Springer, Cham. https://doi.org/10.1007/978-3-031-91721-9_17*'
 ---
 
-Explanation to be added.
+## Overview
+
+Panoramic dental X-rays are the standard first look before procedures like
+implant placement, but two of the structures that matter most for surgical
+planning — the **maxillary sinus** and the **mandibular canal** — are hard to
+delineate reliably. This work builds a deep-learning segmentation model that
+identifies both well enough to generalize across different clinical sources.
+
+## Approach
+
+- **Dataset.** We constructed a labeled panoramic dental X-ray dataset for the
+  two target structures.
+- **Model.** A **U-Net** backbone with a **Convolutional Block Attention Module
+  (CBAM)**. The attention mechanism suppressed false positives by focusing the
+  network on the relevant anatomy, improving precision.
+- **Generalization.** To test robustness beyond our own data, we ran **external
+  validation on an open dataset**, then introduced a **modified CutMix**
+  augmentation tailored to this task. By leveraging shape bias it reduced false
+  negatives and raised sensitivity — the augmentation and regularization
+  strategy expanded the effective training data roughly **1200×**.
+
+## Results
+
+The model reached the best test performance on our constructed dataset while
+also holding up under external validation — evidence it generalizes across
+clinical settings rather than overfitting to one source.
+
+<!-- TODO: add headline numbers (e.g. Dice / IoU, internal vs. external) if
+     you'd like quantitative results shown here. -->
+
+## Links
+
+- **Code:** [github.com/jaykim0413/seg-pano-extended](https://github.com/jaykim0413/seg-pano-extended)
+- **DOI:** [10.1007/978-3-031-91721-9_17](https://doi.org/10.1007/978-3-031-91721-9_17)
+- Presented at the **BioImage Computing Workshop, ECCV 2024**.

@@ -4,8 +4,37 @@ excerpt: "An Electronic Pressure Piano with Pressure-Based Volume Control and Oc
 collection: portfolio
 ---
 
-From August 2025 to December 2025
+From August 2025 to December 2025 · ECE 145 final project
 
-As part of a semester-long hardware design project, I co-developed a pressure-sensitive electronic piano that generates dynamically controlled audio using fully analog and digital circuitry.\
-The system uses force-sensitive resistors (FSRs) to detect finger pressure, enabling real-time volume modulation and multi-key input combinations. We designed and tuned 21 analog sinusoidal tone generators across three octaves using op-amp–based oscillators and RC networks, with tone selection handled through multiplexers, decoders, and a finite state machine for octave control. The project involved extensive hands-on debugging and validation using oscilloscopes and multimeters, as well as integrating a voltage-controlled amplifier (AD605) for audio output, highlighting challenges in mixed-signal design, noise mitigation, and hardware scalability.\
-As a follow-up to some issues noted during the demo of our final product, I am currently working to address the noise generated when any of the lower notes (C ~ E) in octaves 3 and 5 are played.
+![Pressure Piano](/images/pressure-piano-ece-145-cover.png)
+
+## Overview
+
+A semester-long hardware design project: a pressure-sensitive electronic piano
+that generates dynamically controlled audio through fully analog and digital
+circuitry. Rather than simple on/off keys, it reads how hard each key is pressed
+and shapes the sound in real time.
+
+## How it works
+
+- **Pressure sensing.** Force-sensitive resistors (FSRs) under the keys detect
+  finger pressure, driving real-time volume modulation and multi-key input.
+- **Tone generation.** 21 analog sinusoidal tone generators span three octaves
+  (C3–B5), built from op-amp oscillators and RC networks; each was tuned and its
+  frequency accuracy verified on an oscilloscope.
+- **Control logic.** Tone selection and routing run through multiplexers and
+  decoders, with a finite state machine handling octave selection.
+- **Audio output.** An AD605 voltage-controlled amplifier sets output gain from
+  the average pressure across pressed keys — harder presses play louder.
+
+## What we took away
+
+Most of the work was hands-on mixed-signal debugging and validation with
+oscilloscopes and multimeters, and wrestling with noise mitigation and hardware
+scalability.
+
+## Follow-up
+
+Following an issue noticed during the final demo, I'm currently working to
+address the noise that appears when the lower notes (C–E) in octaves 3 and 5 are
+played.
