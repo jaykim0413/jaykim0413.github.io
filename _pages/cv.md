@@ -21,14 +21,22 @@ Honors and Awards
 * James Scholar Honors — Fall 2025, Spring 2026, Fall 2026
 * Dean's List — Fall 2025, Spring 2026
 
+<!-- Work experience — hidden for now (no current roles). Uncomment when there's
+     something to add.
 Work experience
 ======
-<!-- TODO: No current roles. Add research positions, internships, or on-campus
-     jobs here as they come up. Format per entry:
+TODO: Add research positions, internships, or on-campus jobs as they come up.
+Format per entry:
 * Term Year: Role Title
   * Organization
   * What you did (one or two lines)
 -->
+
+Publications
+======
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
 Projects
 ======
@@ -44,19 +52,6 @@ Projects
   * Proposed a novel data augmentation and regularization strategy, expanding the dataset ~1200× to improve generalization on limited medical imaging data.
   * Published and presented at the ECCV 2024 BioImage Computing Workshop (DOI: 10.1007/978-3-031-91721-9_17); code at [github.com/jaykim0413/seg-pano-extended](https://github.com/jaykim0413/seg-pano-extended).
 
-Skills
-======
-* Programming: Java, Python, C++, Embedded C, Rust
-* ML / scientific computing: PyTorch, NumPy
-* Hardware & EDA: KiCAD, Altium Designer
-* Instrumentation: Keysight oscilloscopes, bench power supplies
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
 Leadership and Activities
 ======
 * Aug 2025 – Present: Electrical Team Member, RoboSub — iRobotics
@@ -66,3 +61,10 @@ Leadership and Activities
 * Aug 2025 – Present: Steering Wheel Board Member & Software Team Member, Illini Electric Motorsports
   * Designed the schematic and PCB layout for the steering wheel and dashboard boards; manufactured the steering wheel PCB and validated power delivery (rail stability, ripple, load response) on the bench.
   * Verified quadrature-encoder PWM signals (duty cycle, phase offset, signal integrity) and wrote steering-wheel firmware in embedded C on STM32, establishing CAN communication and encoder processing.
+
+Skills
+======
+* Programming: Java, Python, C++, Embedded C, Rust
+* ML / scientific computing: PyTorch, NumPy
+* Hardware & EDA: KiCAD, Altium Designer
+* Instrumentation: Keysight oscilloscopes, bench power supplies
